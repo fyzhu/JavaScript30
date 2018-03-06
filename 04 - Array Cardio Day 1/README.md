@@ -84,6 +84,7 @@ console.table(__ordered);
 ````js
   // https://book.douban.com/tag/web
   const cate = document.querySelectorAll('.subject-list h2 a');
+  const links = Array.from(cate);
   const book = links
 			.map(link => link.title)
 			.filter(title => title.includes('CSS'));
